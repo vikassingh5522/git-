@@ -1,10 +1,39 @@
 
-function exampleFunction() {
-    console.log("This is an example function.");
 
-    console.log("Additional functionality can be added here."); 
+// let newPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Promise resolved successfully!");
+//     }, 2000);
 
-    console.log("End of the example function.");
+// })
+
+// newPromise.then((message) => {
+//     console.log(message);
+// }).catch((error) => {
+//     console.error("Promise rejected:", error);
+// });
+
+
+
+let resolve = food;
+
+  food = "make the pizza now !";
+ 
+
+let newPromise1 = new Promise((resolve, reject)=>{
+
     
-}
-exampleFunction();
+    setTimeout(() =>{
+        resolve("Promise 1 resolved!");
+
+        reject("Promise 1 rejected!");
+
+    }, 3000);
+})
+newPromise1
+            .then((message) =>{
+                console.log(message);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            })
